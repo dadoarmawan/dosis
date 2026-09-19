@@ -1,27 +1,40 @@
-# Pediatric Dose Calculator — OMSA Medic
+# OMSA Medic — Pediatric Dose Calculator
 
-Web app statis untuk GitHub Pages.
+Versi final untuk **GitHub Pages**.
 
-## Deploy
-1. Upload seluruh folder/repository ini ke GitHub.
-2. Pastikan `index.html`, `app.js`, `style.css`, dan folder `data/` berada pada root repository.
-3. GitHub → Settings → Pages → Deploy from branch → pilih branch utama dan folder `/ (root)`.
-4. Buka URL GitHub Pages.
+## Struktur
 
-## Struktur database
-`data/medicines.json` berisi nama generik, regimen, sediaan, konsentrasi, dan referensi yang ditampilkan.
+```text
+index.html
+app.js
+style.css
+README.md
+data/
+  medicines.json
+  inventory-products.json
+```
 
-## Catatan keselamatan
-Database awal adalah contoh terkurasi dan bukan formularium lengkap. Sebelum dipakai untuk keputusan klinis, setiap regimen harus diverifikasi terhadap pedoman pediatrik/formularium yang berlaku di fasilitas. Tambahkan obat/regimen hanya setelah sumber primer/otoritatif diverifikasi.
+Semua file sudah berada di **root repository** sehingga `index.html` dapat langsung dikenali GitHub Pages.
 
+## Upload ke GitHub
 
-## Antibiotic stewardship
-Antibiotic entries are reference calculations only. The WHO AWaRe antibiotic book provides indication-specific guidance on antibiotic choice, dose, route and duration; the app should not select an antibiotic solely from body weight. Verify diagnosis, age group, renal function, allergy, local resistance guidance, and the exact product concentration before prescribing.
+1. Ekstrak ZIP.
+2. Upload **isi folder ZIP**, bukan folder pembungkusnya.
+3. Di root repository harus langsung terlihat `index.html`, `app.js`, `style.css`, dan folder `data`.
+4. Buka **Settings → Pages**.
+5. Pilih **Deploy from a branch**, branch utama, folder **/(root)**.
+6. Simpan dan tunggu proses deployment.
 
+## Database
 
-## Database MIMS
-Database diperluas menggunakan informasi publik MIMS Indonesia sebagai salah satu referensi monograf. Konten MIMS berhak cipta; proyek ini tidak menyalin database MIMS secara keseluruhan. Sediaan dibuat statis di `data/medicines.json` dan tidak ada menu untuk menambah sediaan dari browser. Selalu verifikasi monograf produk lokal dan protokol klinik sebelum penggunaan.
+- `data/medicines.json` = database kalkulator dengan regimen pediatrik, sediaan, merek, dan referensi.
+- `data/inventory-products.json` = daftar produk dari inventaris klinik yang diimpor.
+- Sediaan bersifat **statis**; tidak ada menu untuk menambah sediaan dari aplikasi.
 
+## Catatan klinis
 
-### Sumber tambahan dosis pediatrik
-Database v6 menambahkan beberapa monograf dengan pembanding informasi publik dari Halodoc, Alodokter, dan K24Klik. Sumber tersebut digunakan sebagai referensi sekunder dan bukan pengganti pedoman/formularium atau informasi produk resmi. Untuk obat kombinasi, periksa seluruh komponen aktif agar tidak terjadi duplikasi dosis.
+Aplikasi ini merupakan alat bantu perhitungan dan bukan pengganti penilaian klinis. Verifikasi pasien, usia, BB, indikasi, alergi, kontraindikasi, interaksi, fungsi ginjal/hati, konsentrasi produk, dosis maksimum, dan monograf/formularium yang berlaku sebelum pemberian.
+
+Untuk antibiotik, gunakan regimen berdasarkan diagnosis/indikasi dan pedoman yang sesuai; jangan memilih antibiotik hanya berdasarkan berat badan.
+
+Sumber sekunder seperti MIMS, Halodoc, Alodokter, dan K24Klik digunakan sebagai referensi tambahan pada pengembangan database dan tidak menggantikan pedoman primer, formularium, atau informasi produk resmi.

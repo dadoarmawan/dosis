@@ -33,7 +33,24 @@
       }
     ],
     "brands": [
-      "Tempra"
+      "Tempra",
+      "FASIDOL FORTE",
+      "FASIDOL PLUS (600mg)",
+      "FASIDOL 500 MG",
+      "FASIDOL DROP",
+      "FASIDOL 125mg (SIRUP)",
+      "FASIDOL FORTE 160mg (SIRUP)",
+      "SANMOL FORTE (650mg)",
+      "SANMOL (500mg)",
+      "PAMOL 500 MG",
+      "SANMOL DROP",
+      "SANMOL FORTE SIRUP",
+      "SANMOL SIRUP",
+      "PAMOL SIRUP",
+      "Pamol Supp 250 mg",
+      "Pamol Supp 125 mg",
+      "SANMOL INFUSE",
+      "PARACETAMOL INFUS"
     ]
   },
   {
@@ -65,7 +82,14 @@
         "mgPerUnit": 200
       }
     ],
-    "brands": []
+    "brands": [
+      "FARSIFEN 400 MG",
+      "FARSIFEN 200 MG",
+      "farsifen syrup",
+      "farsifen forte syrup",
+      "RHELAFEN SYR",
+      "RHELAFEN FORTE SYR"
+    ]
   },
   {
     "id": "amoxicillin",
@@ -100,7 +124,14 @@
         "mgPerUnit": 500
       }
     ],
-    "brands": []
+    "brands": [
+      "YUSIMOX TABLET",
+      "YUSIMOX SIRUP",
+      "YUSIMOX FORTE SIRUP",
+      "LAPIMOX 500 MG",
+      "LAPIMOX 125mg SYR",
+      "LAPIMOX 250mg SYR"
+    ]
   },
   {
     "id": "cefixime",
@@ -131,7 +162,17 @@
         "mgPerMl": 40
       }
     ],
-    "brands": []
+    "brands": [
+      "HELIXIM  100mg",
+      "HELIXIM SIRUP",
+      "CEFIXIME 100 MG",
+      "CEFIXIME 200 MG",
+      "CEFILA 100mg",
+      "CEFILA 200mg",
+      "CEFILA SIRUP",
+      "CEFSPAN 100 MG",
+      "CEFSPAN 200 MG"
+    ]
   },
   {
     "id": "cetirizine",
@@ -162,7 +203,15 @@
         "mgPerUnit": 10
       }
     ],
-    "brands": []
+    "brands": [
+      "LERZIN TAB",
+      "ALERZIN",
+      "LERZIN SIRUP",
+      "LERZIN DROPS",
+      "CETINAL",
+      "CETINAL SIRUP",
+      "TIRIZ"
+    ]
   },
   {
     "id": "loratadine",
@@ -193,7 +242,9 @@
         "mgPerUnit": 10
       }
     ],
-    "brands": []
+    "brands": [
+      "WINATIN"
+    ]
   },
   {
     "id": "azithromycin",
@@ -224,7 +275,14 @@
         "mgPerUnit": 500
       }
     ],
-    "brands": []
+    "brands": [
+      "AZITRAN",
+      "ZITHRAX",
+      "MEZATRIN",
+      "ZYCIN TAB",
+      "AZITHROMISIN TAB",
+      "AZIBAC"
+    ]
   },
   {
     "id": "salbutamol",
@@ -251,7 +309,12 @@
         "mgPerMl": 0.4
       }
     ],
-    "brands": []
+    "brands": [
+      "VENTOLIN NEBUL",
+      "LASAL NEBU",
+      "lasal syrup",
+      "lasal expectorant syrup"
+    ]
   },
   {
     "id": "ambroxol",
@@ -263,7 +326,11 @@
       "Promuxol",
       "Lapimuc",
       "Limoxin",
-      "Roverton"
+      "Roverton",
+      "ROVERTON TAB",
+      "ROVERTON DROPS",
+      "ROVERTON SIRUP",
+      "HUFAXOL TAB"
     ],
     "info": "Regimen pediatrik pada sumber produk/monograf dapat berbasis usia, bukan mg/kgBB. Karena itu kalkulator menggunakan aturan usia untuk ambroxol pada data ini.",
     "doseMode": "age",
@@ -394,7 +461,10 @@
     "class": "Kortikosteroid topikal / preparat oral mukosa",
     "brands": [
       "Kenacort-A",
-      "Kenalog in Orabase"
+      "Kenalog in Orabase",
+      "NESTACORT CREAM",
+      "kenacort-a",
+      "kenalog in orabase"
     ],
     "info": "Ini bukan obat yang dihitung dengan mg/kgBB pada sediaan topikal/oral paste. Kalkulator menampilkan cara pakai produk dan sengaja tidak menghitung dosis berbasis BB.",
     "doseMode": "nonWeight",
@@ -429,7 +499,10 @@
     "generic": "Amoxicillin + clavulanic acid",
     "class": "Antibiotik beta-laktam + inhibitor beta-laktamase",
     "brands": [
-      "Augmentin"
+      "Augmentin",
+      "CLANEKSI 500",
+      "CLANEKSI SIRUP",
+      "CLAVAMOX 500 MG"
     ],
     "info": "Dosis dihitung berdasarkan komponen amoxicillin. Regimen sangat bergantung pada infeksi dan formulasi; verifikasi rasio amoxicillin:clavulanate serta pedoman lokal.",
     "indications": [
@@ -503,7 +576,14 @@
     "generic": "Cefadroxil",
     "class": "Antibiotik sefalosporin generasi 1",
     "brands": [
-      "Duricef"
+      "Duricef",
+      "LOSTACEF 500 MG TABLET",
+      "LOSTACEF 250 MG SIRUP",
+      "LOSTACFE 125 MG SIRUP",
+      "LAPICEF 500mg",
+      "LAPICEF 125 SYR",
+      "LAPICEF 250 SYR",
+      "LAPICEF DROPS"
     ],
     "info": "Gunakan sesuai indikasi dan pedoman lokal. Dosis dapat berbeda berdasarkan jenis infeksi dan fungsi ginjal.",
     "indications": [
@@ -577,7 +657,9 @@
     "generic": "Ceftriaxone",
     "class": "Antibiotik sefalosporin generasi 3 — injeksi",
     "brands": [
-      "Rocephin"
+      "Rocephin",
+      "CEFTRIAXON INJEK",
+      "ceftriaxon injeksi"
     ],
     "info": "Obat injeksi dengan regimen yang sangat bergantung pada indikasi. Meningitis memiliki regimen berbeda. Jangan gunakan angka tunggal ini tanpa menentukan diagnosis/indikasi.",
     "indications": [
@@ -678,7 +760,11 @@
     "generic": "Metronidazole",
     "class": "Antibiotik/antiprotozoa",
     "brands": [
-      "Flagyl"
+      "Flagyl",
+      "FARIZOL   TABLET",
+      "GRAFASOL TAB",
+      "farizol sirup",
+      "METZOL AMP"
     ],
     "info": "Dosis sangat bergantung pada infeksi (anaerob, protozoa, dll.). Jangan menggunakan satu regimen untuk semua indikasi.",
     "indications": [
@@ -752,7 +838,9 @@
     "generic": "Gentamicin",
     "class": "Aminoglikosida — injeksi",
     "brands": [
-      "Garamycin"
+      "Garamycin",
+      "GENTAMICIN CREAM",
+      "SAGESTAM"
     ],
     "info": "Obat dengan risiko toksisitas dan memerlukan perhatian khusus terhadap usia, fungsi ginjal, interval dosis, dan pada situasi tertentu therapeutic drug monitoring.",
     "indications": [
@@ -967,7 +1055,8 @@
       "Diflucan",
       "Flucoral",
       "Fludis",
-      "Fluxar"
+      "Fluxar",
+      "DIFLUCAN 150 MG TAB"
     ]
   },
   {
@@ -1006,7 +1095,10 @@
         "mgPerUnit": 20
       }
     ],
-    "brands": []
+    "brands": [
+      "OMEPRAZOLE",
+      "DOBRIZOL"
+    ]
   },
   {
     "id": "ondansetron",
@@ -1042,7 +1134,19 @@
       }
     ],
     "brands": [
-      "ODR"
+      "ODR",
+      "ODANOSTIN",
+      "ONDANSENTRON 4 MG TAB",
+      "VOMCERAN 4 MG",
+      "VOMCERAN 8 MG",
+      "TROVENSIS 4 MG",
+      "TROVENSIS 8 MG",
+      "INVOIMIT 4 MG",
+      "INVOMIT 8 MG",
+      "ONDANSENTRON SIRUP",
+      "ONDANSENTRON INJEKSI",
+      "ONDANSENTRON 8 MG INJEKSI",
+      "ONDANSENTRON 8 MG"
     ]
   },
   {
@@ -1091,7 +1195,10 @@
       "Lecozinc",
       "L-Zinc",
       "Orezinc",
-      "Zircum Kid"
+      "Zircum Kid",
+      "LECOZINC TAB",
+      "MEGAZING",
+      "L-ZINC SIRUP"
     ]
   },
   {
@@ -1167,7 +1274,16 @@
       }
     ],
     "brands": [
-      "Cortidex"
+      "Cortidex",
+      "DEXA HARSEN 0.5 MG",
+      "DEXA HARSEN 0,5 MG",
+      "QUANTIDEX TAB",
+      "QUANTIDEX SIRUP",
+      "INDEXON 0.5MG",
+      "INDEXON 0,5MG",
+      "INDEXON INJEKSI",
+      "CORTIDEX",
+      "DEXAMETASONE AMP"
     ]
   },
   {
@@ -1242,7 +1358,8 @@
       "CTM PIM",
       "Chlorpheniramine Rama",
       "Chlorpheniramine Triman",
-      "Ceteem"
+      "Ceteem",
+      "ALLERON"
     ],
     "sources": [
       "https://www.halodoc.com/kesehatan/chlorpheniramine",
@@ -1444,6 +1561,434 @@
     "sources": [
       "https://www.k24klik.com/p/guaifenesin-100mg-33079",
       "https://www.k24klik.com/p/guaifenesin-kf-100mg-tab-1000s-btl-4887"
+    ]
+  },
+  {
+    "id": "mefenamic-acid",
+    "generic": "Mefenamic acid",
+    "class": "NSAID/analgesik",
+    "info": "Regimen pediatrik harus memperhatikan usia, indikasi, hidrasi, fungsi ginjal, dan risiko gastrointestinal.",
+    "indications": [
+      {
+        "name": "Nyeri/demam (anak >6 bulan; verifikasi label produk)",
+        "doseMin": 25,
+        "doseMax": 25,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi dalam 3 dosis",
+        "maxDaily": 1500,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "Mefenamic Acid 50 mg/5 mL SmPC (emc)"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 50 mg/5 mL",
+        "mgPerMl": 10
+      },
+      {
+        "name": "Tablet 500 mg",
+        "mgPerUnit": 500
+      }
+    ],
+    "brands": [
+      "Mefinal",
+      "Lapistan",
+      "MEFINAL",
+      "LAPISTAN"
+    ]
+  },
+  {
+    "id": "bromhexine",
+    "generic": "Bromhexine",
+    "class": "Mukolitik",
+    "info": "Dosis berbeda menurut usia dan produk; penggunaan pada anak kecil perlu memperhatikan label produk.",
+    "indications": [
+      {
+        "name": "Batuk berdahak",
+        "doseMin": 0.5,
+        "doseMax": 0.5,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 2–4 dosis",
+        "refs": [
+          "Halodoc – Bromhexine HCl",
+          "Alodokter – Bromhexine"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 4 mg/5 mL",
+        "mgPerMl": 0.8
+      },
+      {
+        "name": "Tablet 8 mg",
+        "mgPerUnit": 8
+      }
+    ],
+    "brands": [
+      "Bromifar",
+      "Bronchosal",
+      "Bisolvon",
+      "BROMIFAR TAB",
+      "BROMIFAR PLUS",
+      "BROCHIFAR",
+      "BRONCHOSAL 4 MG"
+    ]
+  },
+  {
+    "id": "acetylcysteine",
+    "generic": "Acetylcysteine",
+    "class": "Mukolitik/antidot",
+    "info": "Untuk mukolitik, regimen anak berbeda menurut usia. Regimen overdosis parasetamol merupakan regimen khusus dan bukan regimen batuk.",
+    "indications": [
+      {
+        "name": "Mukolitik usia 2–6 tahun",
+        "doseMin": 100,
+        "doseMax": 100,
+        "unit": "mg/dosis",
+        "frequency": "2–4 kali sehari",
+        "refs": [
+          "Alodokter – Acetylcysteine",
+          "MIMS – Acetylcysteine"
+        ]
+      },
+      {
+        "name": "Mukolitik >6 tahun",
+        "doseMin": 200,
+        "doseMax": 200,
+        "unit": "mg/dosis",
+        "frequency": "2–3 kali sehari",
+        "maxDaily": 600,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "Alodokter – Acetylcysteine",
+          "MIMS – Acetylcysteine"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup kering 100 mg/5 mL",
+        "mgPerMl": 20
+      },
+      {
+        "name": "Kapsul 200 mg",
+        "mgPerUnit": 200
+      },
+      {
+        "name": "Effervescent 600 mg",
+        "mgPerUnit": 600
+      }
+    ],
+    "brands": [
+      "Acetylsistein",
+      "Lapimuc",
+      "L-ACYS",
+      "ACETYLSISTEIN",
+      "LAPIMUC TABLET",
+      "L-ACYS 200 MG",
+      "L-ACYS 600 MG"
+    ]
+  },
+  {
+    "id": "lansoprazole",
+    "generic": "Lansoprazole",
+    "class": "PPI",
+    "info": "Dosis pediatrik bergantung usia/BB dan indikasi; verifikasi monograf produk.",
+    "indications": [
+      {
+        "name": "GERD/penyakit asam lambung",
+        "doseMin": 0.5,
+        "doseMax": 1,
+        "unit": "mg/kg/hari",
+        "frequency": "1 kali sehari",
+        "maxDaily": 30,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Paediatric Dosing Guide",
+          "MIMS – Lansoprazole"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Kapsul 30 mg",
+        "mgPerUnit": 30
+      }
+    ],
+    "brands": [
+      "Lansoprazole",
+      "LANCID",
+      "LANSOPRAZOLE"
+    ]
+  },
+  {
+    "id": "domperidone",
+    "generic": "Domperidone",
+    "class": "Antiemetik/prokinetik",
+    "info": "Penggunaan pediatrik harus mempertimbangkan batas usia/BB dan risiko QT. Gunakan durasi sesingkat mungkin sesuai indikasi.",
+    "indications": [
+      {
+        "name": "Mual/muntah – referensi pediatrik",
+        "doseMin": 0.25,
+        "doseMax": 0.25,
+        "unit": "mg/kg/dosis",
+        "frequency": "3 kali sehari",
+        "maxDaily": 30,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "PaedsENGAGE/PharmWatch 2025",
+          "Formulari Ubat KKM"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 5 mg/5 mL",
+        "mgPerMl": 1
+      },
+      {
+        "name": "Tablet 10 mg",
+        "mgPerUnit": 10
+      }
+    ],
+    "brands": [
+      "Hufadon",
+      "Vesperum",
+      "DOM",
+      "HUFADON",
+      "VESPERUM TABLET",
+      "VESPERUM SIRUP"
+    ]
+  },
+  {
+    "id": "metoclopramide",
+    "generic": "Metoclopramide",
+    "class": "Antiemetik",
+    "info": "Obat ini memiliki pembatasan usia dan risiko efek ekstrapiramidal; gunakan hanya bila indikasi sesuai dan dengan durasi singkat.",
+    "indications": [
+      {
+        "name": "Mual/muntah – regimen pediatrik harus diverifikasi",
+        "doseMin": 0.1,
+        "doseMax": 0.15,
+        "unit": "mg/kg/dosis",
+        "frequency": "hingga 3 kali sehari; interval minimal 6 jam",
+        "maxDaily": 0.5,
+        "maxDailyUnit": "mg/kg/hari",
+        "refs": [
+          "WHO Pocket Book of Hospital Care for Children",
+          "PharmWatch – Metoclopramide"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 10 mg",
+        "mgPerUnit": 10
+      },
+      {
+        "name": "Injeksi 5 mg/mL",
+        "mgPerMl": 5
+      }
+    ],
+    "brands": [
+      "Primperan",
+      "PRIMPERAN TAB",
+      "PRIMPERAN INJEKSI"
+    ]
+  },
+  {
+    "id": "loperamide",
+    "generic": "Loperamide",
+    "class": "Antidiare",
+    "info": "Tidak digunakan rutin pada anak kecil; tata laksana diare anak terutama rehidrasi dan zinc sesuai pedoman.",
+    "indications": [
+      {
+        "name": "Diare – tidak dihitung otomatis pada anak kecil",
+        "doseMin": 0,
+        "doseMax": 0,
+        "unit": "nonWeight",
+        "frequency": "Jangan gunakan tanpa indikasi dan verifikasi usia",
+        "refs": [
+          "WHO Pocket Book of Hospital Care for Children"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 2 mg",
+        "mgPerUnit": 2
+      }
+    ],
+    "brands": [
+      "Imodium",
+      "Lodia",
+      "IMODIUM",
+      "LODIA TAB"
+    ]
+  },
+  {
+    "id": "hyoscine-butylbromide",
+    "generic": "Hyoscine butylbromide",
+    "class": "Antispasmodik",
+    "info": "Dosis pediatrik tergantung usia dan sediaan; verifikasi monograf produk sebelum penggunaan.",
+    "indications": [
+      {
+        "name": "Spasme gastrointestinal",
+        "doseMin": 0,
+        "doseMax": 0,
+        "unit": "nonWeight",
+        "frequency": "Lihat monograf produk; tidak dihitung otomatis",
+        "refs": [
+          "MIMS – Hyoscine butylbromide"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 10 mg",
+        "mgPerUnit": 10
+      },
+      {
+        "name": "Injeksi",
+        "mgPerUnit": 20
+      }
+    ],
+    "brands": [
+      "Buscopan",
+      "BUSCOPAN PLUS",
+      "BUSCOPAN  INJEKSI"
+    ]
+  },
+  {
+    "id": "permethrin",
+    "generic": "Permethrin",
+    "class": "Antiparasit topikal",
+    "info": "Terapi skabies menggunakan aplikasi topikal; bukan perhitungan mg/kg.",
+    "indications": [
+      {
+        "name": "Skabies",
+        "doseMin": 0,
+        "doseMax": 0,
+        "unit": "nonWeight",
+        "frequency": "Oleskan sesuai petunjuk produk; tidak dihitung berdasarkan BB",
+        "refs": [
+          "WHO Model Formulary for Children",
+          "MIMS – Permethrin"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Krim 5%",
+        "mgPerUnit": 50
+      }
+    ],
+    "brands": [
+      "Scabimite",
+      "SCABIMITE",
+      "PERMETHRIN 5% CREAM"
+    ]
+  },
+  {
+    "id": "acyclovir",
+    "generic": "Acyclovir",
+    "class": "Antivirus",
+    "info": "Regimen sangat bergantung pada jenis infeksi, usia, status imun, dan fungsi ginjal.",
+    "indications": [
+      {
+        "name": "Herpes simpleks – regimen pediatrik perlu disesuaikan indikasi",
+        "doseMin": 20,
+        "doseMax": 20,
+        "unit": "mg/kg/dosis",
+        "frequency": "4 kali sehari",
+        "maxDaily": 800,
+        "maxDailyUnit": "mg/dosis",
+        "refs": [
+          "WHO Model Formulary for Children",
+          "MIMS – Acyclovir"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 200 mg",
+        "mgPerUnit": 200
+      },
+      {
+        "name": "Krim 5%",
+        "mgPerUnit": 50
+      }
+    ],
+    "brands": [
+      "Acifar",
+      "ACIFAR 200 TABLET",
+      "ACIFAR 400 TABLET",
+      "ACIFAR CREAM"
+    ]
+  },
+  {
+    "id": "budesonide",
+    "generic": "Budesonide",
+    "class": "Kortikosteroid inhalasi",
+    "info": "Dosis bergantung pada diagnosis dan perangkat inhalasi/nebulizer.",
+    "indications": [
+      {
+        "name": "Asma/wheezing – nebulisasi",
+        "doseMin": 0.25,
+        "doseMax": 0.5,
+        "unit": "mg/dosis",
+        "frequency": "1–2 kali sehari; sesuai regimen klinis",
+        "refs": [
+          "WHO Paediatric Dosing Guide",
+          "MIMS – Budesonide"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Respules 0.25 mg/mL",
+        "mgPerMl": 0.25
+      },
+      {
+        "name": "Respules 0.5 mg/mL",
+        "mgPerMl": 0.5
+      }
+    ],
+    "brands": [
+      "Pulmicort",
+      "PULMICORT"
+    ]
+  },
+  {
+    "id": "levothyroxine",
+    "generic": "Levothyroxine",
+    "class": "Hormon tiroid",
+    "info": "Dosis anak berdasarkan usia dan kondisi tiroid; memerlukan titrasi berdasarkan TSH/T4 dan tidak boleh diperlakukan sebagai dosis tetap.",
+    "indications": [
+      {
+        "name": "Hipotiroidisme – dosis usia-dependent",
+        "doseMin": 0,
+        "doseMax": 0,
+        "unit": "nonWeight",
+        "frequency": "Gunakan dosis usia/etiologi dan hasil laboratorium; tidak dihitung otomatis",
+        "refs": [
+          "WHO Paediatric Dosing Guide",
+          "MIMS – Levothyroxine"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 50 mcg",
+        "mgPerUnit": 0.05
+      }
+    ],
+    "brands": [
+      "Euthyrox",
+      "EUTHIROX 50 TAB"
     ]
   }
 ]
