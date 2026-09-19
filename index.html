@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f766e">
+  <title>Pediatric Dose Calculator — OMSA Medic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">Rx</div>
+    <div><b>Pediatric Dose Calculator</b><small>OMSA Medic • clinical calculation aid</small></div>
+  </div>
+  <button id="printBtn" class="ghost">🖨 Cetak</button>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <span class="eyebrow">PEDIATRIC DOSING</span>
+      <h1>Kalkulator Dosis Obat Anak</h1>
+      <p>Hitung dosis berbasis berat badan, konversi ke sirup, dan estimasi kebutuhan puyer.</p>
+    </div>
+    <div class="hero-badge">⚕️ Verifikasi klinis tetap diperlukan</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <div class="section-head"><h2>1. Data pasien</h2><span class="step">INPUT</span></div>
+      <div class="form-grid">
+        <label>Nama pasien<input id="patientName" placeholder="Opsional"></label>
+        <label>BB (kg)<input id="weight" type="number" min="0.1" step="0.1" placeholder="mis. 15"></label>
+        <label>Usia (tahun)<input id="ageYears" type="number" min="0" max="18" step="1" value="3"></label>
+        <label>Usia (bulan tambahan)<input id="ageMonths" type="number" min="0" max="11" step="1" value="0"></label>
+      </div>
+
+      <div class="section-head sub"><h2>2. Obat & regimen</h2><span class="step">CALCULATE</span></div>
+      <label>Cari obat generik
+        <input id="drugSearch" placeholder="Ketik nama obat, mis. paracetamol">
+      </label>
+      <label>Pilih obat
+        <select id="drugSelect"></select>
+      </label>
+      <div id="drugInfo" class="drug-info"></div>
+
+      <label>Indikasi / regimen
+        <select id="indicationSelect"></select>
+      </label>
+
+      <div class="form-grid">
+        <label>Sediaan
+          <select id="formulationSelect"></select>
+        </label>
+        <label>Jumlah puyer
+          <input id="powderCount" type="number" min="1" step="1" value="10">
+        </label>
+      </div>
+
+      <button id="calculateBtn" class="primary">⚡ Hitung dosis</button>
+    </section>
+
+    <section class="card result-card">
+      <div class="section-head"><h2>Hasil perhitungan</h2><span id="statusPill" class="status neutral">MENUNGGU INPUT</span></div>
+      <div id="emptyResult" class="empty">Masukkan BB dan pilih obat, lalu tekan <b>Hitung dosis</b>.</div>
+      <div id="result" hidden></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="section-head"><h2>Database obat</h2><span id="drugCount" class="step"></span></div>
+    <p class="muted">Database contoh ini sengaja dibatasi pada obat dan regimen yang telah diberi referensi di file data. Tambahkan regimen hanya setelah diverifikasi terhadap formularium/protokol yang digunakan klinik.</p>
+    <div class="table-wrap">
+      <table><thead><tr><th>Generik</th><th>Kelas</th><th>Sediaan contoh</th><th>Referensi</th></tr></thead>
+      <tbody id="drugTable"></tbody></table>
+    </div>
+  </section>
+
+  <section class="warning">
+    <b>⚠️ Penting:</b> Aplikasi ini adalah alat bantu perhitungan, bukan pengganti penilaian dokter/apoteker. Verifikasi usia, berat badan, indikasi, alergi, fungsi ginjal/hati, interaksi, konsentrasi produk, dosis maksimum, dan kesesuaian formulasi sebelum pemberian. Antibiotik tidak boleh dipilih hanya berdasarkan kalkulator.
+  </section>
+</main>
+
+<footer>OMSA Medic • Pediatric Dose Calculator • Database: <code>data/medicines.json</code></footer>
+<script src="app.js"></script>
+</body>
+</html>
