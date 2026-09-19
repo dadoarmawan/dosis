@@ -31,6 +31,9 @@
         "name": "Tablet 500 mg",
         "mgPerUnit": 500
       }
+    ],
+    "brands": [
+      "Tempra"
     ]
   },
   {
@@ -61,7 +64,8 @@
         "name": "Tablet 200 mg",
         "mgPerUnit": 200
       }
-    ]
+    ],
+    "brands": []
   },
   {
     "id": "amoxicillin",
@@ -95,7 +99,8 @@
         "name": "Capsule 500 mg",
         "mgPerUnit": 500
       }
-    ]
+    ],
+    "brands": []
   },
   {
     "id": "cefixime",
@@ -125,7 +130,8 @@
         "name": "Dry syrup 200 mg/5 mL",
         "mgPerMl": 40
       }
-    ]
+    ],
+    "brands": []
   },
   {
     "id": "cetirizine",
@@ -155,7 +161,8 @@
         "name": "Tablet 10 mg",
         "mgPerUnit": 10
       }
-    ]
+    ],
+    "brands": []
   },
   {
     "id": "loratadine",
@@ -185,7 +192,8 @@
         "name": "Tablet 10 mg",
         "mgPerUnit": 10
       }
-    ]
+    ],
+    "brands": []
   },
   {
     "id": "azithromycin",
@@ -215,7 +223,8 @@
         "name": "Tablet 500 mg",
         "mgPerUnit": 500
       }
-    ]
+    ],
+    "brands": []
   },
   {
     "id": "salbutamol",
@@ -240,6 +249,596 @@
       {
         "name": "Sirup 2 mg/5 mL",
         "mgPerMl": 0.4
+      }
+    ],
+    "brands": []
+  },
+  {
+    "id": "ambroxol",
+    "generic": "Ambroxol",
+    "class": "Mukolitik",
+    "brands": [
+      "Epexol",
+      "Epexol Forte",
+      "Promuxol",
+      "Lapimuc",
+      "Limoxin",
+      "Roverton"
+    ],
+    "info": "Regimen pediatrik pada sumber produk/monograf dapat berbasis usia, bukan mg/kgBB. Karena itu kalkulator menggunakan aturan usia untuk ambroxol pada data ini.",
+    "doseMode": "age",
+    "indications": [
+      {
+        "name": "Mukolitik / gangguan saluran napas dengan sekret mukus",
+        "doseRules": [
+          {
+            "minMonths": 0,
+            "maxMonths": 23,
+            "doseText": "2,5 mL",
+            "frequency": "2 kali sehari",
+            "note": "Regimen usia <2 tahun dari informasi produk; verifikasi produk yang digunakan."
+          },
+          {
+            "minMonths": 24,
+            "maxMonths": 71,
+            "doseText": "2,5 mL",
+            "frequency": "3 kali sehari",
+            "note": "Untuk sirup 15 mg/5 mL."
+          },
+          {
+            "minMonths": 72,
+            "maxMonths": 143,
+            "doseText": "5 mL",
+            "frequency": "2–3 kali sehari",
+            "note": "Untuk sirup 15 mg/5 mL."
+          },
+          {
+            "minMonths": 144,
+            "maxMonths": 999,
+            "doseText": "sesuai regimen dewasa",
+            "frequency": "sesuai monograf produk",
+            "note": "Verifikasi dosis produk."
+          }
+        ],
+        "refs": [
+          "MIMS Indonesia: Ambroxol",
+          "MIMS Indonesia: Epexol/Epexol Forte",
+          "Produsen Novapharin: Ambroxol Syrup"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 15 mg/5 mL",
+        "mgPerMl": 3
+      },
+      {
+        "name": "Sirup/Forte 30 mg/5 mL",
+        "mgPerMl": 6
+      },
+      {
+        "name": "Tetes 15 mg/mL",
+        "mgPerMl": 15
+      },
+      {
+        "name": "Tablet 30 mg",
+        "mgPerUnit": 30
+      }
+    ]
+  },
+  {
+    "id": "erdosteine",
+    "generic": "Erdosteine",
+    "class": "Mukolitik",
+    "brands": [
+      "Erdomex",
+      "Erdobat",
+      "Vectrine",
+      "Vostrin"
+    ],
+    "info": "Regimen yang ditemukan pada monograf produk berbasis kelompok berat badan. Sediaan dry syrup 175 mg/5 mL perlu direkonstitusi sesuai petunjuk produk.",
+    "doseMode": "weightBand",
+    "indications": [
+      {
+        "name": "Mukolitik / gangguan respirasi akut dan kronik",
+        "doseRules": [
+          {
+            "minKg": 0,
+            "maxKg": 14.99,
+            "doseText": "Tidak ada regimen otomatis",
+            "frequency": "verifikasi monograf",
+            "note": "Sumber yang digunakan memberikan regimen mulai 15 kg."
+          },
+          {
+            "minKg": 15,
+            "maxKg": 19.99,
+            "doseText": "5 mL",
+            "frequency": "2 kali sehari",
+            "note": "Sediaan 175 mg/5 mL."
+          },
+          {
+            "minKg": 20,
+            "maxKg": 30,
+            "doseText": "5 mL",
+            "frequency": "3 kali sehari",
+            "note": "Sediaan 175 mg/5 mL."
+          },
+          {
+            "minKg": 30.01,
+            "maxKg": 999,
+            "doseText": "10 mL",
+            "frequency": "2 kali sehari",
+            "note": "Sediaan 175 mg/5 mL; sumber produk menyebut >30 kg."
+          }
+        ],
+        "refs": [
+          "MIMS Indonesia: Erdomex",
+          "Vectrine product information listing"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Dry syrup 175 mg/5 mL",
+        "mgPerMl": 35
+      },
+      {
+        "name": "Capsule 300 mg",
+        "mgPerUnit": 300
+      }
+    ]
+  },
+  {
+    "id": "triamcinolone-acetonide",
+    "generic": "Triamcinolone acetonide",
+    "class": "Kortikosteroid topikal / preparat oral mukosa",
+    "brands": [
+      "Kenacort-A",
+      "Kenalog in Orabase"
+    ],
+    "info": "Ini bukan obat yang dihitung dengan mg/kgBB pada sediaan topikal/oral paste. Kalkulator menampilkan cara pakai produk dan sengaja tidak menghitung dosis berbasis BB.",
+    "doseMode": "nonWeight",
+    "indications": [
+      {
+        "name": "Lesi inflamasi/ulseratif oral — Kenalog in Orabase",
+        "doseRules": [
+          {
+            "doseText": "oleskan sedikit (±1/4 inci) hingga terbentuk lapisan tipis",
+            "frequency": "1 kali sehari sebelum tidur; dapat 2–3 kali/hari sesuai gejala",
+            "note": "Tidak untuk dihitung sebagai mg/kgBB."
+          }
+        ],
+        "refs": [
+          "MIMS Indonesia: Kenalog in Orabase"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Gel/pasta oral 0,1%",
+        "strengthPercent": 0.1
+      },
+      {
+        "name": "Krim 0,1% (Kenacort-A)",
+        "strengthPercent": 0.1
+      }
+    ]
+  },
+  {
+    "id": "amoxicillin-clavulanate",
+    "generic": "Amoxicillin + clavulanic acid",
+    "class": "Antibiotik beta-laktam + inhibitor beta-laktamase",
+    "brands": [
+      "Augmentin"
+    ],
+    "info": "Dosis dihitung berdasarkan komponen amoxicillin. Regimen sangat bergantung pada infeksi dan formulasi; verifikasi rasio amoxicillin:clavulanate serta pedoman lokal.",
+    "indications": [
+      {
+        "name": "Regimen referensi pediatrik — komponen amoxicillin",
+        "doseMin": 25,
+        "doseMax": 50,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 3 dosis",
+        "maxDaily": 4000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO suggested pediatric antibiotic dosing; WHO AWaRe antibiotic book"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Dry syrup 125 mg/31,25 mg per 5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Dry syrup 250 mg/62,5 mg per 5 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Dry syrup 400 mg/57 mg per 5 mL",
+        "mgPerMl": 80
+      }
+    ]
+  },
+  {
+    "id": "cephalexin",
+    "generic": "Cefalexin",
+    "class": "Antibiotik sefalosporin generasi 1",
+    "brands": [
+      "Keflex"
+    ],
+    "info": "Regimen bergantung pada indikasi. Angka berikut adalah regimen referensi pediatrik dan bukan pengganti pemilihan terapi berdasarkan diagnosis.",
+    "indications": [
+      {
+        "name": "Regimen referensi pediatrik",
+        "doseMin": 50,
+        "doseMax": 100,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 2 dosis",
+        "maxDaily": 4000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO suggested pediatric antibiotic dosing"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 125 mg/5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Sirup 250 mg/5 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Kapsul 500 mg",
+        "mgPerUnit": 500
+      }
+    ]
+  },
+  {
+    "id": "cefadroxil",
+    "generic": "Cefadroxil",
+    "class": "Antibiotik sefalosporin generasi 1",
+    "brands": [
+      "Duricef"
+    ],
+    "info": "Gunakan sesuai indikasi dan pedoman lokal. Dosis dapat berbeda berdasarkan jenis infeksi dan fungsi ginjal.",
+    "indications": [
+      {
+        "name": "Regimen referensi pediatrik",
+        "doseMin": 30,
+        "doseMax": 50,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 1–2 dosis",
+        "maxDaily": 2000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "Formularium/monograf produk; verifikasi pedoman lokal"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Dry syrup 125 mg/5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Dry syrup 250 mg/5 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Dry syrup 500 mg/5 mL",
+        "mgPerMl": 100
+      }
+    ]
+  },
+  {
+    "id": "cefuroxime",
+    "generic": "Cefuroxime",
+    "class": "Antibiotik sefalosporin generasi 2",
+    "brands": [
+      "Zinnat"
+    ],
+    "info": "Sediaan oral dan injeksi memiliki regimen berbeda. Entri ini hanya untuk formulasi oral; verifikasi indikasi dan fungsi ginjal.",
+    "indications": [
+      {
+        "name": "Regimen referensi oral pediatrik",
+        "doseMin": 20,
+        "doseMax": 30,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 2 dosis",
+        "maxDaily": 1000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO/antibiotic dosing references; product information"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 125 mg/5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Suspensi 250 mg/5 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Tablet 250 mg",
+        "mgPerUnit": 250
+      }
+    ]
+  },
+  {
+    "id": "ceftriaxone",
+    "generic": "Ceftriaxone",
+    "class": "Antibiotik sefalosporin generasi 3 — injeksi",
+    "brands": [
+      "Rocephin"
+    ],
+    "info": "Obat injeksi dengan regimen yang sangat bergantung pada indikasi. Meningitis memiliki regimen berbeda. Jangan gunakan angka tunggal ini tanpa menentukan diagnosis/indikasi.",
+    "indications": [
+      {
+        "name": "Regimen referensi non-meningitis",
+        "doseMin": 50,
+        "doseMax": 50,
+        "unit": "mg/kg/dosis",
+        "frequency": "setiap 24 jam",
+        "maxDaily": 2000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO antibiotic dosing guidance"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Vial 1 g",
+        "mgPerUnit": 1000
+      },
+      {
+        "name": "Vial 2 g",
+        "mgPerUnit": 2000
+      }
+    ]
+  },
+  {
+    "id": "cloxacillin",
+    "generic": "Cloxacillin",
+    "class": "Antibiotik penisilin anti-stafilokokus",
+    "brands": [
+      "Orbenin"
+    ],
+    "info": "Regimen bergantung pada infeksi. Entri ini adalah referensi umum; verifikasi pedoman lokal.",
+    "indications": [
+      {
+        "name": "Regimen referensi pediatrik",
+        "doseMin": 50,
+        "doseMax": 100,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 4 dosis",
+        "maxDaily": 4000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model List/antibiotic dosing references"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 125 mg/5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Kapsul 250 mg",
+        "mgPerUnit": 250
+      },
+      {
+        "name": "Kapsul 500 mg",
+        "mgPerUnit": 500
+      }
+    ]
+  },
+  {
+    "id": "ampicillin",
+    "generic": "Ampicillin",
+    "class": "Antibiotik penisilin — oral/injeksi",
+    "brands": [],
+    "info": "Regimen sangat berbeda pada neonatus, infeksi berat, dan infeksi spesifik. Entri ini bukan regimen neonatus.",
+    "indications": [
+      {
+        "name": "Regimen referensi anak >28 hari",
+        "doseMin": 80,
+        "doseMax": 100,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi setiap 6–12 jam sesuai indikasi",
+        "maxDaily": 4000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO suggested pediatric antibiotic dosing"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Vial 500 mg",
+        "mgPerUnit": 500
+      },
+      {
+        "name": "Vial 1 g",
+        "mgPerUnit": 1000
+      }
+    ]
+  },
+  {
+    "id": "metronidazole",
+    "generic": "Metronidazole",
+    "class": "Antibiotik/antiprotozoa",
+    "brands": [
+      "Flagyl"
+    ],
+    "info": "Dosis sangat bergantung pada infeksi (anaerob, protozoa, dll.). Jangan menggunakan satu regimen untuk semua indikasi.",
+    "indications": [
+      {
+        "name": "Regimen referensi umum — perlu pilih indikasi",
+        "doseMin": 20,
+        "doseMax": 30,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 3 dosis",
+        "maxDaily": 1500,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO AWaRe antibiotic book — verifikasi indikasi"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 125 mg/5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Suspensi 250 mg/5 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Tablet 250 mg",
+        "mgPerUnit": 250
+      },
+      {
+        "name": "Tablet 500 mg",
+        "mgPerUnit": 500
+      }
+    ]
+  },
+  {
+    "id": "cotrimoxazole",
+    "generic": "Sulfamethoxazole + trimethoprim",
+    "class": "Antibakteri sulfonamid + trimethoprim",
+    "brands": [
+      "Bactrim"
+    ],
+    "info": "Dosis harus dinyatakan berdasarkan komponen trimethoprim atau mengikuti produk/pedoman. Verifikasi konsentrasi produk.",
+    "indications": [
+      {
+        "name": "Regimen referensi pediatrik — berdasarkan komponen trimethoprim",
+        "doseMin": 6,
+        "doseMax": 8,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 2 dosis",
+        "maxDaily": 320,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO antibiotic dosing references"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 40 mg TMP + 200 mg SMX per 5 mL",
+        "mgPerMl": 8
+      },
+      {
+        "name": "Tablet 80 mg TMP + 400 mg SMX",
+        "mgPerUnit": 80
+      }
+    ]
+  },
+  {
+    "id": "gentamicin",
+    "generic": "Gentamicin",
+    "class": "Aminoglikosida — injeksi",
+    "brands": [
+      "Garamycin"
+    ],
+    "info": "Obat dengan risiko toksisitas dan memerlukan perhatian khusus terhadap usia, fungsi ginjal, interval dosis, dan pada situasi tertentu therapeutic drug monitoring.",
+    "indications": [
+      {
+        "name": "Regimen referensi",
+        "doseMin": 5,
+        "doseMax": 7,
+        "unit": "mg/kg/hari",
+        "frequency": "interval sesuai usia/fungsi ginjal dan protokol",
+        "maxDaily": 0,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO pediatric antibiotic dosing references"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Injeksi 40 mg/mL",
+        "mgPerMl": 40
+      }
+    ]
+  },
+  {
+    "id": "amikacin",
+    "generic": "Amikacin",
+    "class": "Aminoglikosida — injeksi",
+    "brands": [
+      "Amikin"
+    ],
+    "info": "Perlu penyesuaian berdasarkan usia, fungsi ginjal dan interval dosis. Therapeutic drug monitoring dapat diperlukan.",
+    "indications": [
+      {
+        "name": "Regimen referensi",
+        "doseMin": 15,
+        "doseMax": 20,
+        "unit": "mg/kg/hari",
+        "frequency": "setiap 24 jam pada regimen tertentu; verifikasi protokol",
+        "maxDaily": 0,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO suggested pediatric antibiotic dosing"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Injeksi 100 mg/2 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Injeksi 500 mg/2 mL",
+        "mgPerMl": 250
+      }
+    ]
+  },
+  {
+    "id": "chloramphenicol",
+    "generic": "Chloramphenicol",
+    "class": "Antibiotik",
+    "brands": [
+      "Chloromycetin"
+    ],
+    "info": "Penggunaan pediatrik memiliki pertimbangan keamanan penting. Hindari memasukkan sebagai pilihan rutin tanpa indikasi yang jelas dan pedoman spesifik.",
+    "indications": [
+      {
+        "name": "Regimen referensi — indikasi khusus",
+        "doseMin": 50,
+        "doseMax": 100,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 4 dosis",
+        "maxDaily": 3000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO suggested pediatric antibiotic dosing"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Kapsul 250 mg",
+        "mgPerUnit": 250
+      },
+      {
+        "name": "Injeksi 1 g",
+        "mgPerUnit": 1000
       }
     ]
   }

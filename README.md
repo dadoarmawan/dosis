@@ -13,3 +13,7 @@ Web app statis untuk GitHub Pages.
 
 ## Catatan keselamatan
 Database awal adalah contoh terkurasi dan bukan formularium lengkap. Sebelum dipakai untuk keputusan klinis, setiap regimen harus diverifikasi terhadap pedoman pediatrik/formularium yang berlaku di fasilitas. Tambahkan obat/regimen hanya setelah sumber primer/otoritatif diverifikasi.
+
+
+## Antibiotic stewardship
+Antibiotic entries are reference calculations only. The WHO AWaRe antibiotic book provides indication-specific guidance on antibiotic choice, dose, route and duration; the app should not select an antibiotic solely from body weight. Verify diagnosis, age group, renal function, allergy, local resistance guidance, and the exact product concentration before prescribing.
