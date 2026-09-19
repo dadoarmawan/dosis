@@ -1,12 +1,5 @@
 let medicines=[]; let current=null;
 const $=id=>document.getElementById(id);
-const CUSTOM_KEY='omsa_pediatric_custom_formulations_v1';
-let customFormulations=loadCustomFormulations();
-
-function loadCustomFormulations(){
-  try{return JSON.parse(localStorage.getItem(CUSTOM_KEY)||'{}')}catch(e){return {}}
-}
-function saveCustomFormulations(){localStorage.setItem(CUSTOM_KEY,JSON.stringify(customFormulations))}
 function esc(v=''){return String(v).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 
 async function init(){
@@ -22,8 +15,7 @@ function populateDrugs(list){
 }
 function allFormulations(drug){
   const base=drug.formulations||[];
-  const extra=customFormulations[drug.id]||[];
-  return [...base,...extra.map(x=>({...x,custom:true}))];
+  return base;
 }
 function renderTable(list){
   $("drugTable").innerHTML=list.map(d=>`<tr><td><b>${esc(d.generic)}</b><br><span class="mini">${esc((d.brands||[]).join(", ")||"—")}</span></td><td>${esc(d.class)}</td><td>${esc(allFormulations(d).map(f=>f.name).join(", "))}</td><td>${esc(d.indications?.[0]?.refs?.join("; ")||"-")}</td></tr>`).join("");
@@ -39,7 +31,7 @@ function populateFormulations(selectedIndex=null){
   if(!current)return;
   const forms=allFormulations(current);
   const sel=$("formulationSelect"), old=selectedIndex!==null?String(selectedIndex):sel.value;
-  sel.innerHTML=forms.map((x,i)=>`<option value="${i}">${esc(x.name)}${x.custom?' • tambahan':''}</option>`).join("");
+  sel.innerHTML=forms.map((x,i)=>`<option value="${i}">${esc(x.name)}</option>`).join("");
   if(old && Number(old)<forms.length) sel.value=old;
 }
 function num(v){return Number(v)||0}
@@ -110,45 +102,19 @@ function renderNeedVerify(ind,form,wt,y,m,msg){
   $("emptyResult").hidden=true;$("result").hidden=false;$("statusPill").className="status warn";$("statusPill").textContent="PERLU VERIFIKASI";
   $("result").innerHTML=`<div class="result-title">${esc(current.generic)}</div><div class="result-sub">BB ${wt} kg • usia ${y} th ${m} bln</div><div class="dose-box"><div class="dose">Tidak dihitung otomatis</div><div class="mini">${esc(msg)}</div></div><div class="checks"><div class="check warn">⚠ Jangan gunakan angka ini untuk menentukan dosis.</div></div><div class="refs"><b>Referensi:</b> ${esc((ind.refs||[]).join(" • "))}</div>`;
 }
-function openFormulationModal(){
-  if(!current)return;
-  $("modalDrugName").textContent=current.generic;
-  $("formName").value=''; $("formMgPerMl").value=''; $("formMgPerUnit").value=''; $("formNotes").value='';
-  $("formulationModal").classList.add('show'); $("formName").focus();
-}
-function closeFormulationModal(){$("formulationModal").classList.remove('show')}
-function addFormulation(e){
-  e.preventDefault();
-  const name=$("formName").value.trim(), mgPerMl=num($("formMgPerMl").value), mgPerUnit=num($("formMgPerUnit").value), notes=$("formNotes").value.trim();
-  if(!name){alert('Nama sediaan wajib diisi.');return}
-  if(!mgPerMl && !mgPerUnit){alert('Isi minimal salah satu: mg/mL atau mg per unit.');return}
-  if(!customFormulations[current.id])customFormulations[current.id]=[];
-  customFormulations[current.id].push({name,mgPerMl:mgPerMl||undefined,mgPerUnit:mgPerUnit||undefined,notes,custom:true});
-  saveCustomFormulations(); populateFormulations(); renderTable(medicines); closeFormulationModal();
-  alert(`Sediaan “${name}” ditambahkan untuk ${current.generic}. Data tersimpan di browser ini.`);
-}
-function manageFormulations(){
-  if(!current)return;
-  const items=customFormulations[current.id]||[];
-  $("customList").innerHTML=items.length?items.map((x,i)=>`<div class="custom-item"><div><b>${esc(x.name)}</b><div class="mini">${x.mgPerMl?esc(x.mgPerMl)+' mg/mL ':''}${x.mgPerUnit?esc(x.mgPerUnit)+' mg/unit':''}${x.notes?' • '+esc(x.notes):''}</div></div><button class="danger-btn" data-del="${i}">Hapus</button></div>`).join(''):`<div class="mini">Belum ada sediaan tambahan untuk obat ini.</div>`;
-  $("manageModal").classList.add('show');
-  document.querySelectorAll('[data-del]').forEach(btn=>btn.onclick=()=>{const i=Number(btn.dataset.del); customFormulations[current.id].splice(i,1); if(!customFormulations[current.id].length)delete customFormulations[current.id]; saveCustomFormulations(); manageFormulations(); populateFormulations(); renderTable(medicines);});
-}
-function closeManageModal(){$("manageModal").classList.remove('show')}
-function exportCustom(){
-  const blob=new Blob([JSON.stringify(customFormulations,null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='omsa-custom-formulations.json'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
-}
+
+
 $("drugSelect").addEventListener("change",updateDrug);
 $("calculateBtn").addEventListener("click",calculate);
 $("printBtn").addEventListener("click",()=>window.print());
-$("addFormulationBtn").addEventListener('click',openFormulationModal);
-$("manageFormulationBtn").addEventListener('click',manageFormulations);
-$("closeFormulationModal").addEventListener('click',closeFormulationModal);
-$("closeManageModal").addEventListener('click',closeManageModal);
-$("formulationForm").addEventListener('submit',addFormulation);
-$("exportCustomBtn").addEventListener('click',exportCustom);
+
+
+
+
+
+
 $("drugSearch").addEventListener("input",e=>{
   const q=e.target.value.toLowerCase().trim(); const list=medicines.filter(x=>(x.generic+" "+x.class+" "+(x.brands||[]).join(" ")).toLowerCase().includes(q)); renderTable(list); populateDrugs(list);
 });
-window.addEventListener('click',e=>{if(e.target===$("formulationModal"))closeFormulationModal();if(e.target===$("manageModal"))closeManageModal()});
+
 init().catch(err=>{console.error(err);alert("Database obat gagal dimuat. Pastikan folder data/ ikut di-upload ke GitHub.");});

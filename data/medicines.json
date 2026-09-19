@@ -841,5 +841,609 @@
         "mgPerUnit": 1000
       }
     ]
+  },
+  {
+    "id": "cefpodoxime",
+    "generic": "Cefpodoxime",
+    "class": "Antibiotik sefalosporin generasi 3",
+    "info": "Regimen pediatrik berbasis monograf MIMS; pemilihan antibiotik harus berdasarkan indikasi dan pedoman lokal.",
+    "indications": [
+      {
+        "name": "Infeksi bakteri tertentu",
+        "doseMin": 4,
+        "doseMax": 5,
+        "unit": "mg/kg/dosis",
+        "frequency": "setiap 12 jam",
+        "maxDaily": 200,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "MIMS Indonesia – Cefpodoxime"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 50 mg/5 mL",
+        "mgPerMl": 10
+      },
+      {
+        "name": "Suspensi 100 mg/5 mL",
+        "mgPerMl": 20
+      }
+    ],
+    "brands": []
+  },
+  {
+    "id": "cefotaxime",
+    "generic": "Cefotaxime",
+    "class": "Antibiotik sefalosporin generasi 3",
+    "info": "MIMS mencantumkan regimen anak berdasarkan BB dan usia untuk infeksi serius; gunakan protokol rumah sakit untuk pemilihan dan durasi.",
+    "indications": [
+      {
+        "name": "Infeksi serius",
+        "doseMin": 50,
+        "doseMax": 180,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 4 dosis",
+        "refs": [
+          "MIMS Indonesia – Simexim/Cefotaxime"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Serbuk injeksi 1 g",
+        "mgPerUnit": 1000
+      }
+    ],
+    "brands": [
+      "Simexim"
+    ]
+  },
+  {
+    "id": "clindamycin",
+    "generic": "Clindamycin",
+    "class": "Antibiotik lincosamide",
+    "info": "Regimen pediatrik MIMS berbeda menurut rute dan derajat infeksi. Entri ini menggunakan regimen oral umum dari monograf MIMS.",
+    "indications": [
+      {
+        "name": "Infeksi anaerob/Gram-positif – oral",
+        "doseMin": 8,
+        "doseMax": 25,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 3–4 dosis",
+        "refs": [
+          "MIMS Indonesia – Clindamycin"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Kapsul 150 mg",
+        "mgPerUnit": 150
+      }
+    ],
+    "brands": [
+      "Dalacin C",
+      "Clinika Gel",
+      "Clinmas",
+      "Medi-Klin",
+      "Milorin",
+      "Prolic"
+    ]
+  },
+  {
+    "id": "fluconazole",
+    "generic": "Fluconazole",
+    "class": "Antijamur triazole",
+    "info": "Dosis anak bergantung pada jenis infeksi dan kondisi imun. Entri ini mencakup rentang sistemik dari monograf MIMS.",
+    "indications": [
+      {
+        "name": "Kandidiasis sistemik – oral/IV",
+        "doseMin": 6,
+        "doseMax": 12,
+        "unit": "mg/kg/hari",
+        "frequency": "1 kali sehari",
+        "refs": [
+          "MIMS Indonesia – Fluconazole"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Kapsul 50 mg",
+        "mgPerUnit": 50
+      },
+      {
+        "name": "Kapsul 150 mg",
+        "mgPerUnit": 150
+      }
+    ],
+    "brands": [
+      "Cryptal",
+      "Fodisis",
+      "Zemyc",
+      "Candipar",
+      "Diflucan",
+      "Flucoral",
+      "Fludis",
+      "Fluxar"
+    ]
+  },
+  {
+    "id": "omeprazole",
+    "generic": "Omeprazole",
+    "class": "Proton pump inhibitor",
+    "info": "Regimen pediatrik MIMS untuk GERD/refluks oesofagitis menggunakan kelompok berat badan. Jangan gunakan kalkulator ini untuk indikasi lain tanpa verifikasi regimen.",
+    "doseMode": "weightBand",
+    "indications": [
+      {
+        "name": "GERD / refluks oesofagitis",
+        "doseRules": [
+          {
+            "minKg": 10,
+            "maxKg": 20,
+            "doseText": "10 mg sekali sehari",
+            "frequency": "1 kali sehari",
+            "note": "MIMS: dapat ditingkatkan menjadi 20 mg sekali sehari sesuai respons untuk regimen tertentu."
+          },
+          {
+            "minKg": 20.01,
+            "maxKg": 200,
+            "doseText": "20 mg sekali sehari",
+            "frequency": "1 kali sehari",
+            "note": "MIMS: pada kondisi tertentu dapat ditingkatkan sesuai respons dan indikasi."
+          }
+        ],
+        "refs": [
+          "MIMS Indonesia – Omeprazole"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Kapsul 20 mg",
+        "mgPerUnit": 20
+      }
+    ],
+    "brands": []
+  },
+  {
+    "id": "ondansetron",
+    "generic": "Ondansetron",
+    "class": "Antiemetik antagonis 5-HT3",
+    "info": "Penggunaan anak terutama pada konteks tertentu seperti kemoterapi atau mual muntah pascaoperasi; regimen harus disesuaikan dengan indikasi dan rute.",
+    "indications": [
+      {
+        "name": "Mual/muntah terkait kemoterapi – IV",
+        "doseMin": 0.15,
+        "doseMax": 0.15,
+        "unit": "mg/kg/dosis",
+        "frequency": "sesuai protokol kemoterapi",
+        "maxDaily": 16,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "MIMS Indonesia – Ondansetron"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Injeksi 4 mg/2 mL",
+        "mgPerMl": 2
+      },
+      {
+        "name": "Injeksi 8 mg/2 mL",
+        "mgPerMl": 4
+      },
+      {
+        "name": "Sirup 4 mg/5 mL",
+        "mgPerMl": 0.8
+      }
+    ],
+    "brands": [
+      "ODR"
+    ]
+  },
+  {
+    "id": "zinc-sulfate",
+    "generic": "Zinc sulfate",
+    "class": "Suplemen zinc / antidiare",
+    "info": "Untuk diare anak, zinc digunakan bersama cairan rehidrasi oral. Dosis sediaan komersial dapat berbeda; entri berikut mengikuti monograf MIMS untuk produk zinc anak.",
+    "doseMode": "age",
+    "indications": [
+      {
+        "name": "Diare anak – suplementasi zinc",
+        "doseRules": [
+          {
+            "minMonths": 2,
+            "maxMonths": 5,
+            "doseText": "½ tablet dispersible atau ½ sdt sirup per hari",
+            "frequency": "1 kali sehari selama 10 hari",
+            "note": "MIMS produk Interzinc."
+          },
+          {
+            "minMonths": 6,
+            "maxMonths": 71,
+            "doseText": "1 tablet dispersible atau 1 sdt sirup per hari",
+            "frequency": "1 kali sehari selama 10 hari",
+            "note": "MIMS produk Interzinc; tetap berikan cairan rehidrasi oral."
+          }
+        ],
+        "refs": [
+          "MIMS Indonesia – Interzinc / Zinc sulfate"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 20 mg/5 mL",
+        "mgPerMl": 4
+      },
+      {
+        "name": "Tablet dispersible 20 mg",
+        "mgPerUnit": 20
+      }
+    ],
+    "brands": [
+      "Interzinc",
+      "DaryaZinc",
+      "Lecozinc",
+      "L-Zinc",
+      "Orezinc",
+      "Zircum Kid"
+    ]
+  },
+  {
+    "id": "prednisolone",
+    "generic": "Prednisolone",
+    "class": "Kortikosteroid",
+    "info": "Dosis sistemik prednisolone sangat bergantung pada diagnosis. Entri ini hanya menampilkan rentang anti-inflamasi/imunosupresif dari monograf MIMS.",
+    "indications": [
+      {
+        "name": "Anti-inflamasi / imunosupresif",
+        "doseMin": 0.14,
+        "doseMax": 2,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 3–4 dosis atau sesuai indikasi",
+        "refs": [
+          "MIMS Indonesia – Prednisolone"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 5 mg",
+        "mgPerUnit": 5
+      }
+    ],
+    "brands": []
+  },
+  {
+    "id": "dexamethasone",
+    "generic": "Dexamethasone",
+    "class": "Kortikosteroid",
+    "info": "Regimen anak sangat bergantung pada indikasi. Data berikut berasal dari monograf produk MIMS Indonesia dan bukan regimen universal untuk semua penyakit.",
+    "doseMode": "age",
+    "indications": [
+      {
+        "name": "Regimen pediatrik tertentu – oral",
+        "doseRules": [
+          {
+            "minMonths": 0,
+            "maxMonths": 11,
+            "doseText": "0,1–0,25 mg",
+            "frequency": "2 kali sehari",
+            "note": "MIMS produk Cortidex; indikasi harus diverifikasi."
+          },
+          {
+            "minMonths": 12,
+            "maxMonths": 59,
+            "doseText": "0,25–1 mg",
+            "frequency": "2 kali sehari",
+            "note": "MIMS produk Cortidex; indikasi harus diverifikasi."
+          },
+          {
+            "minMonths": 60,
+            "maxMonths": 143,
+            "doseText": "0,25–2 mg",
+            "frequency": "2 kali sehari",
+            "note": "MIMS produk Cortidex; indikasi harus diverifikasi."
+          }
+        ],
+        "refs": [
+          "MIMS Indonesia – Cortidex / Dexamethasone"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 0,5 mg",
+        "mgPerUnit": 0.5
+      },
+      {
+        "name": "Injeksi 5 mg/mL",
+        "mgPerMl": 5
+      }
+    ],
+    "brands": [
+      "Cortidex"
+    ]
+  },
+  {
+    "id": "chlorpheniramine",
+    "generic": "Chlorpheniramine maleate",
+    "class": "Antihistamin H1 generasi pertama",
+    "info": "Sumber dosis publik: Halodoc, Alodokter, K24Klik. Menyebabkan kantuk; verifikasi usia, kontraindikasi dan sediaan.",
+    "indications": [
+      {
+        "name": "Gejala alergi/rinitis alergi/urtikaria",
+        "doseMode": "age",
+        "ageDoses": [
+          {
+            "minYears": 1,
+            "maxYears": 2,
+            "doseMin": 1,
+            "doseMax": 1,
+            "unit": "mg/dosis",
+            "frequency": "2 kali sehari",
+            "maxDaily": 2,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 2,
+            "maxYears": 6,
+            "doseMin": 1,
+            "doseMax": 1,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4–6 jam",
+            "maxDaily": 6,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 6,
+            "maxYears": 12,
+            "doseMin": 2,
+            "doseMax": 2,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4–6 jam",
+            "maxDaily": 12,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 12,
+            "doseMin": 4,
+            "doseMax": 4,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4–6 jam",
+            "maxDaily": 24,
+            "maxDailyUnit": "mg/hari"
+          }
+        ],
+        "refs": [
+          "Halodoc – Chlorpheniramine (2026)",
+          "Alodokter – Chlorpheniramine",
+          "K24Klik – Chlorpheniramine Rama 4 mg"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 4 mg",
+        "mgPerUnit": 4
+      },
+      {
+        "name": "Sirup",
+        "note": "konsentrasi mengikuti produk; cek label"
+      }
+    ],
+    "brands": [
+      "CTM",
+      "CTM PIM",
+      "Chlorpheniramine Rama",
+      "Chlorpheniramine Triman",
+      "Ceteem"
+    ],
+    "sources": [
+      "https://www.halodoc.com/kesehatan/chlorpheniramine",
+      "https://www.alodokter.com/chlorpheniramine",
+      "https://www.k24klik.com/p/chlorphenamine-rama-4mg-tab-100s-24078"
+    ]
+  },
+  {
+    "id": "dimenhydrinate",
+    "generic": "Dimenhydrinate",
+    "class": "Antihistamin/antiemetik",
+    "info": "Untuk pencegahan/terapi mual muntah terutama mabuk perjalanan. Hindari <2 tahun tanpa pengawasan dokter.",
+    "indications": [
+      {
+        "name": "Mabuk perjalanan/mual muntah/vertigo",
+        "doseMode": "age",
+        "ageDoses": [
+          {
+            "minYears": 2,
+            "maxYears": 6,
+            "doseMin": 12.5,
+            "doseMax": 25,
+            "unit": "mg/dosis",
+            "frequency": "setiap 6–8 jam bila perlu",
+            "maxDaily": 75,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 6,
+            "maxYears": 12,
+            "doseMin": 25,
+            "doseMax": 50,
+            "unit": "mg/dosis",
+            "frequency": "setiap 6–8 jam bila perlu",
+            "maxDaily": 150,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 12,
+            "doseMin": 50,
+            "doseMax": 100,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4–6 jam bila perlu",
+            "maxDaily": 400,
+            "maxDailyUnit": "mg/hari"
+          }
+        ],
+        "refs": [
+          "Halodoc – Dimenhydrinate",
+          "Alodokter – Dimenhydrinate",
+          "K24Klik – Dimenhydrinate KF 50 mg"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 50 mg",
+        "mgPerUnit": 50
+      },
+      {
+        "name": "Tablet kunyah 50 mg",
+        "mgPerUnit": 50
+      }
+    ],
+    "brands": [
+      "Antimo",
+      "Omedrinat",
+      "Dimenhydrinate Kimia Farma",
+      "Dimenhydrinate Erlimpex"
+    ],
+    "sources": [
+      "https://www.halodoc.com/kesehatan/dimenhydrinate",
+      "https://www.alodokter.com/dimenhydrinate",
+      "https://www.k24klik.com/p/dimenhydrinate-kf-50mg-tab-100s-btl-33448"
+    ]
+  },
+  {
+    "id": "dextromethorphan",
+    "generic": "Dextromethorphan",
+    "class": "Antitusif",
+    "info": "Untuk batuk kering/nonproduktif. Hindari pada anak <4 tahun; periksa kandungan obat kombinasi untuk mencegah duplikasi dosis.",
+    "indications": [
+      {
+        "name": "Batuk kering/nonproduktif",
+        "doseMode": "age",
+        "ageDoses": [
+          {
+            "minYears": 4,
+            "maxYears": 6,
+            "doseMin": 7.5,
+            "doseMax": 7.5,
+            "unit": "mg/dosis",
+            "frequency": "3–4 kali sehari",
+            "maxDaily": 30,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 6,
+            "maxYears": 12,
+            "doseMin": 15,
+            "doseMax": 15,
+            "unit": "mg/dosis",
+            "frequency": "3–4 kali sehari",
+            "maxDaily": 60,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 12,
+            "doseMin": 30,
+            "doseMax": 30,
+            "unit": "mg/dosis",
+            "frequency": "3–4 kali sehari",
+            "maxDaily": 120,
+            "maxDailyUnit": "mg/hari"
+          }
+        ],
+        "refs": [
+          "Halodoc – Dextromethorphan",
+          "Alodokter – Dextromethorphan",
+          "K24Klik – Dextromethorphan"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 15 mg/5 mL",
+        "mgPerMl": 3
+      },
+      {
+        "name": "Tablet/kaplet 15 mg",
+        "mgPerUnit": 15
+      }
+    ],
+    "brands": [
+      "Dextromethorphan generik"
+    ],
+    "sources": [
+      "https://www.halodoc.com/kesehatan/dextromethorphan",
+      "https://www.alodokter.com/dextromethorphan",
+      "https://www.k24klik.com/blog/dextromethorphan-manfaat-dosis/"
+    ]
+  },
+  {
+    "id": "guaifenesin",
+    "generic": "Guaifenesin (glyceryl guaiacolate)",
+    "class": "Ekspektoran",
+    "info": "Data publik K24Klik menunjukkan variasi dosis/sediaan; gunakan hanya bila indikasi dan usia sesuai, serta cek label produk.",
+    "indications": [
+      {
+        "name": "Batuk berdahak/ekspektoran",
+        "doseMode": "age",
+        "ageDoses": [
+          {
+            "minYears": 2,
+            "maxYears": 6,
+            "doseMin": 50,
+            "doseMax": 100,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4 jam",
+            "maxDaily": 600,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 6,
+            "maxYears": 12,
+            "doseMin": 100,
+            "doseMax": 200,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4 jam",
+            "maxDaily": 1200,
+            "maxDailyUnit": "mg/hari"
+          },
+          {
+            "minYears": 12,
+            "doseMin": 200,
+            "doseMax": 400,
+            "unit": "mg/dosis",
+            "frequency": "setiap 4 jam",
+            "maxDaily": 2400,
+            "maxDailyUnit": "mg/hari"
+          }
+        ],
+        "refs": [
+          "K24Klik – Guaifenesin 100 mg",
+          "K24Klik – Guaifenesin KF 100 mg"
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Tablet 100 mg",
+        "mgPerUnit": 100
+      }
+    ],
+    "brands": [
+      "Guaifenesin KF",
+      "Guaifenesin generik"
+    ],
+    "sources": [
+      "https://www.k24klik.com/p/guaifenesin-100mg-33079",
+      "https://www.k24klik.com/p/guaifenesin-kf-100mg-tab-1000s-btl-4887"
+    ]
   }
 ]
