@@ -1,0 +1,246 @@
+[
+  {
+    "id": "paracetamol",
+    "generic": "Paracetamol",
+    "class": "Analgesik/antipiretik",
+    "info": "Contoh data dosis pediatrik; sesuaikan dengan pedoman/formularium lokal.",
+    "indications": [
+      {
+        "name": "Nyeri/demam",
+        "doseMin": 10,
+        "doseMax": 15,
+        "unit": "mg/kg/dosis",
+        "frequency": "setiap 4–6 jam bila perlu",
+        "maxDaily": 60,
+        "maxDailyUnit": "mg/kg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 120 mg/5 mL",
+        "mgPerMl": 24
+      },
+      {
+        "name": "Sirup 160 mg/5 mL",
+        "mgPerMl": 32
+      },
+      {
+        "name": "Tablet 500 mg",
+        "mgPerUnit": 500
+      }
+    ]
+  },
+  {
+    "id": "ibuprofen",
+    "generic": "Ibuprofen",
+    "class": "NSAID/analgesik",
+    "info": "Hindari pada dehidrasi berat/penyakit ginjal tertentu; verifikasi usia dan kontraindikasi.",
+    "indications": [
+      {
+        "name": "Nyeri/demam",
+        "doseMin": 5,
+        "doseMax": 10,
+        "unit": "mg/kg/dosis",
+        "frequency": "setiap 6–8 jam bila perlu",
+        "maxDaily": 40,
+        "maxDailyUnit": "mg/kg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Suspensi 100 mg/5 mL",
+        "mgPerMl": 20
+      },
+      {
+        "name": "Tablet 200 mg",
+        "mgPerUnit": 200
+      }
+    ]
+  },
+  {
+    "id": "amoxicillin",
+    "generic": "Amoxicillin",
+    "class": "Antibiotik beta-laktam",
+    "info": "Regimen sangat bergantung indikasi; data contoh harus diverifikasi terhadap pedoman infeksi yang digunakan klinik.",
+    "indications": [
+      {
+        "name": "Regimen contoh: infeksi bakteri sensitif",
+        "doseMin": 25,
+        "doseMax": 50,
+        "unit": "mg/kg/hari",
+        "frequency": "dibagi 2–3 dosis",
+        "maxDaily": 3000,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Dry syrup 125 mg/5 mL",
+        "mgPerMl": 25
+      },
+      {
+        "name": "Dry syrup 250 mg/5 mL",
+        "mgPerMl": 50
+      },
+      {
+        "name": "Capsule 500 mg",
+        "mgPerUnit": 500
+      }
+    ]
+  },
+  {
+    "id": "cefixime",
+    "generic": "Cefixime",
+    "class": "Sefalosporin generasi 3",
+    "info": "Antibiotik; gunakan hanya bila ada indikasi dan sesuai pedoman lokal.",
+    "indications": [
+      {
+        "name": "Regimen contoh pediatrik",
+        "doseMin": 8,
+        "doseMax": 8,
+        "unit": "mg/kg/hari",
+        "frequency": "1–2 kali sehari sesuai pedoman",
+        "maxDaily": 400,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Dry syrup 100 mg/5 mL",
+        "mgPerMl": 20
+      },
+      {
+        "name": "Dry syrup 200 mg/5 mL",
+        "mgPerMl": 40
+      }
+    ]
+  },
+  {
+    "id": "cetirizine",
+    "generic": "Cetirizine",
+    "class": "Antihistamin",
+    "info": "Dosis pediatrik dapat berbeda menurut kelompok usia; verifikasi label/formularium produk.",
+    "indications": [
+      {
+        "name": "Gejala alergi",
+        "doseMin": 0.25,
+        "doseMax": 0.25,
+        "unit": "mg/kg/dosis",
+        "frequency": "1 kali sehari",
+        "maxDaily": 10,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 5 mg/5 mL",
+        "mgPerMl": 1
+      },
+      {
+        "name": "Tablet 10 mg",
+        "mgPerUnit": 10
+      }
+    ]
+  },
+  {
+    "id": "loratadine",
+    "generic": "Loratadine",
+    "class": "Antihistamin",
+    "info": "Verifikasi batas usia dan dosis berdasarkan label/formularium produk.",
+    "indications": [
+      {
+        "name": "Gejala alergi",
+        "doseMin": 5,
+        "doseMax": 10,
+        "unit": "mg/hari",
+        "frequency": "1 kali sehari",
+        "maxDaily": 10,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 5 mg/5 mL",
+        "mgPerMl": 1
+      },
+      {
+        "name": "Tablet 10 mg",
+        "mgPerUnit": 10
+      }
+    ]
+  },
+  {
+    "id": "azithromycin",
+    "generic": "Azithromycin",
+    "class": "Antibiotik makrolida",
+    "info": "Regimen sangat tergantung indikasi. Jangan gunakan kalkulator sebagai penentu antibiotik.",
+    "indications": [
+      {
+        "name": "Regimen contoh",
+        "doseMin": 10,
+        "doseMax": 10,
+        "unit": "mg/kg/dosis",
+        "frequency": "sesuai regimen indikasi",
+        "maxDaily": 500,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Dry syrup 200 mg/5 mL",
+        "mgPerMl": 40
+      },
+      {
+        "name": "Tablet 500 mg",
+        "mgPerUnit": 500
+      }
+    ]
+  },
+  {
+    "id": "salbutamol",
+    "generic": "Salbutamol",
+    "class": "Bronkodilator beta-2 agonis",
+    "info": "Rute dan regimen sangat berbeda (oral vs inhalasi); database ini hanya menyediakan placeholder yang perlu diverifikasi.",
+    "indications": [
+      {
+        "name": "Regimen perlu verifikasi lokal",
+        "doseMin": 0,
+        "doseMax": 0,
+        "unit": "mg",
+        "frequency": "lihat pedoman",
+        "maxDaily": 0,
+        "maxDailyUnit": "mg/hari",
+        "refs": [
+          "WHO Model Formulary for Children, 2nd ed."
+        ]
+      }
+    ],
+    "formulations": [
+      {
+        "name": "Sirup 2 mg/5 mL",
+        "mgPerMl": 0.4
+      }
+    ]
+  }
+]
